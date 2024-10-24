@@ -31,12 +31,6 @@ menuIcon.onclick = () => {
     header.classList.toggle('sticky');
 }
 
-document.addEventListener('touchstart', function(event) {
-    if (!navbar.contains(event.target) && !menuIcon.contains(event.target)) {
-        navbar.classList.remove('active');
-        menuIcon.classList.remove('active');
-    }
-});
 
 document.addEventListener("DOMContentLoaded", function() {
     const sections = document.querySelectorAll('section'); // Select all sections
