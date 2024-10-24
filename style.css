@@ -20,7 +20,7 @@
 html {
     font-family: 'Poppins', sans-serif;
     color: var(--text-color);
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
 }
 
 body {
