@@ -1,20 +1,16 @@
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
-let header = document.querySelector('.topbar')
 
 // Toggle navbar and icon active state
 menuIcon.onclick = () => {
     navbar.classList.toggle('active');
     menuIcon.classList.toggle('active');
-    header.classList.toggle('sticky');
-}
+};
 
 document.addEventListener("DOMContentLoaded", function() {
     const sections = document.querySelectorAll('section'); // Select all sections
     const navLinks = document.querySelectorAll('.navbar a'); // Select all nav links
     const header = document.querySelector('.topbar'); // Select the header
-    const navbar = document.querySelector('.navbar');
-    const menuIcon = document.querySelector('#menu-icon');
 
     // Function to remove active class from all nav links
     const removeActiveClasses = () => {
@@ -31,14 +27,13 @@ document.addEventListener("DOMContentLoaded", function() {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Get the id of the section in view
                 const sectionId = entry.target.id;
-                // Add active class to the corresponding nav link
                 addActiveClass(sectionId);
             }
         });
     }, {
-        threshold: 0.2 // Adjust based on when you want the toggle to happen
+        threshold: 0.7, // Increase threshold to require more of the section to be visible
+        rootMargin: '-100px 0px 0px 0px' // Adjust this based on your layout
     });
 
     // Observe each section
@@ -55,13 +50,14 @@ document.addEventListener("DOMContentLoaded", function() {
             event.preventDefault(); // Prevent default anchor behavior
             const targetId = this.getAttribute('href').substring(1); // Get target section id
             const targetSection = document.getElementById(targetId);
-
-            // Adjust scroll position for header
+            
+            // Adjust scroll position for header height
             const scrollToPosition = targetSection.offsetTop - header.offsetHeight;
 
+            // Smooth scroll to the section
             window.scrollTo({
                 top: scrollToPosition,
-                behavior: 'smooth' // Smooth scroll
+                behavior: 'smooth'
             });
 
             // Close the navbar and menu icon if open (for mobile views)
@@ -72,5 +68,3 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
-
-
