@@ -9,7 +9,6 @@ menuIcon.onclick = () => {
     header.classList.toggle('sticky');
 }
 
-
 document.addEventListener("DOMContentLoaded", function() {
     const sections = document.querySelectorAll('section'); // Select all sections
     const navLinks = document.querySelectorAll('.navbar a'); // Select all nav links
@@ -39,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     }, {
-        threshold: 0.5 // Adjust based on when you want the toggle to happen
+        threshold: 0.2 // Adjust based on when you want the toggle to happen
     });
 
     // Observe each section
