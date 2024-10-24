@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     }, {
-        threshold: 0, // Increase threshold to require more of the section to be visible
+        threshold: 0.4, // Increase threshold to require more of the section to be visible
         rootMargin: '-80px 0px 0px 0px' // Adjust this based on your layout
     });
 
@@ -44,6 +44,23 @@ document.addEventListener("DOMContentLoaded", function() {
         header.classList.toggle('sticky', window.scrollY > 80);
     });
 
+    // Function to handle scroll, accounting for header height and dynamic viewport changes
+    const scrollToSection = (targetSection) => {
+        const headerHeight = header.offsetHeight;
+
+        // Adjust for the address bar on mobile
+        const viewportHeight = window.innerHeight;
+
+        // Get the section's top position and calculate the scroll position, considering the header
+        const sectionTop = targetSection.getBoundingClientRect().top + window.pageYOffset;
+
+        // Scroll to the position accounting for both header and potential address bar
+        window.scrollTo({
+            top: sectionTop - headerHeight,
+            behavior: 'smooth'
+        });
+    };
+
     // Handle smooth scroll and auto-collapse menu on link click (for mobile)
     navLinks.forEach(link => {
         link.addEventListener('click', function(event) {
@@ -51,14 +68,8 @@ document.addEventListener("DOMContentLoaded", function() {
             const targetId = this.getAttribute('href').substring(1); // Get target section id
             const targetSection = document.getElementById(targetId);
             
-            // Adjust scroll position for header height
-            const scrollToPosition = targetSection.offsetTop - header.offsetHeight;
-
-            // Smooth scroll to the section
-            window.scrollTo({
-                top: scrollToPosition,
-                behavior: 'smooth'
-            });
+            // Scroll to the section, accounting for dynamic viewport changes
+            scrollToSection(targetSection);
 
             // Close the navbar and menu icon if open (for mobile views)
             if (navbar.classList.contains('active')) {
@@ -66,5 +77,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 menuIcon.classList.remove('active');
             }
         });
+    });
+
+    // Recalculate the scroll position when the viewport changes (e.g., due to address bar changes)
+    window.addEventListener('resize', function() {
+        const activeLink = document.querySelector('.navbar a.active');
+        if (activeLink) {
+            const targetId = activeLink.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+            scrollToSection(targetSection);
+        }
     });
 });
