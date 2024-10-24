@@ -675,10 +675,6 @@ input[type="checkbox"] {
     .slide-content {
         width: 280px;
     }
-
-    html {
-        scroll-snap-type: none;
-    }
 }
 
 @media (max-width: 500px) {
