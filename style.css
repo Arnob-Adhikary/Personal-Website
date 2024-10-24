@@ -98,6 +98,7 @@ body {
     padding: 9rem 9% 2rem;
     min-height: 100vh;
     scroll-snap-align: start;
+    scroll-snap-stop: always;
     gap: 5rem;
 }
 
@@ -168,6 +169,7 @@ body {
     gap: 1rem;
     scroll-margin-top: 20px;
     scroll-snap-align: start;
+    scroll-snap-stop: always;
     background-color: #fdf3f8;
 }
 .education h1:first-child {
@@ -220,6 +222,7 @@ body {
     padding: 5rem 9% 2rem;
     scroll-margin-top: 20px;
     scroll-snap-align: start;
+    scroll-snap-stop: always;
     /* background-color: var(--bg-color-2); */
     min-height: 100vh;
 }
@@ -318,6 +321,7 @@ body {
     padding: 5rem 9% 2rem;
     scroll-margin-top: 20px;
     scroll-snap-align: start;
+    scroll-snap-stop: always;
     background-color: rgb(238, 238, 238);
 }
 
@@ -413,6 +417,7 @@ body {
     padding: 5rem 9% 2rem;
     scroll-margin-top: 20px;
     scroll-snap-align: start;
+    scroll-snap-stop: always;
     /* background-color: #fad4e3; */
 }
 
@@ -434,6 +439,7 @@ body {
     padding: 5rem 9% 2rem;
     scroll-margin-top: 20px;
     scroll-snap-align: start;
+    scroll-snap-stop: always;
     gap: 2rem;
 }
 
@@ -548,7 +554,7 @@ input[type="checkbox"] {
 @media (max-width: 980px) {
     .home, .education, .experience, 
     .projects, .research, .about_me{
-        padding: 5rem 4% 2rem;
+        padding: 5rem 5% 2rem;
     }
 
     .home {
@@ -607,8 +613,9 @@ input[type="checkbox"] {
     }
 
     .navbar a {
+        font-size: 1.2rem;
         display: block;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
     .navbar a.active::before{
         content: none;
