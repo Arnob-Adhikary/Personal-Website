@@ -89,3 +89,19 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+
+ScrollReveal({ 
+    // reset: true,
+    distance: '80px',
+    duration: 2000,
+    delay: 150 
+});
+
+ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+
+ScrollReveal().reveal('.home .home-img img, .education-content, .experience-container, .slide-container, .research-container, .about_me-main', { origin: 'bottom' });
+
+ScrollReveal().reveal('.home-content h1', { origin: 'left' });
+
+ScrollReveal().reveal('.home-content p', { origin: 'right' });
