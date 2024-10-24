@@ -32,8 +32,8 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     }, {
-        threshold: 0.7, // Increase threshold to require more of the section to be visible
-        rootMargin: '-100px 0px 0px 0px' // Adjust this based on your layout
+        threshold: 0.3, // Increase threshold to require more of the section to be visible
+        rootMargin: '-80px 0px 0px 0px' // Adjust this based on your layout
     });
 
     // Observe each section
