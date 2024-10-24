@@ -96,7 +96,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 9rem 9% 2rem;
-    min-height: 100svh;
+    min-height: 100vh;
     scroll-snap-align: start;
     scroll-snap-stop: always;
     gap: 5rem;
@@ -165,7 +165,7 @@ body {
     justify-content: center;
     flex-direction: column;
     padding: 5rem 9% 2rem;
-    min-height: 100svh;
+    min-height: 100vh;
     gap: 1rem;
     scroll-margin-top: 20px;
     scroll-snap-align: start;
@@ -224,7 +224,7 @@ body {
     scroll-snap-align: start;
     scroll-snap-stop: always;
     /* background-color: var(--bg-color-2); */
-    min-height: 100svh;
+    min-height: 100vh;
 }
 
 .experience h1:first-child{
@@ -318,7 +318,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100svh;
+    min-height: 100vh;
     padding: 5rem 9% 2rem;
     scroll-margin-top: 20px;
     scroll-snap-align: start;
@@ -414,7 +414,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100svh;
+    min-height: 100vh;
     padding: 5rem 9% 2rem;
     scroll-margin-top: 20px;
     scroll-snap-align: start;
@@ -436,7 +436,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100svh;
+    min-height: 100vh;
     padding: 5rem 9% 2rem;
     scroll-margin-top: 20px;
     scroll-snap-align: start;
