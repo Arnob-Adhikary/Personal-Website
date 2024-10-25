@@ -2,6 +2,7 @@
 :root {
     --bg-color: #FEFFFE;
     --bg-color-2: #E5FCF5;
+    --bg-color-3: #fbf5f3;
     --text-color: #210124;
     --main-color: #750D37;
     --accent-color: #96C4A5;
@@ -170,7 +171,8 @@ body {
     scroll-margin-top: 20px;
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    background-color: #fdf3f8;
+    /* background-color: var(--bg-color-3); */
+    background-color: rgb(238, 238, 238);
 }
 .education h1:first-child {
     text-align: center;
@@ -183,18 +185,12 @@ body {
     gap: 4rem;
     padding: 1.5rem 4rem;
     align-items: center;
-    /* border-left: 10px solid var(--accent-color-2);
-    border-right: 10px solid var(--accent-color-2);
-    border-bottom: 2px solid var(--accent-color-2);
-    border-top: 2px solid var(--accent-color-2); */
-    border: 2px solid var(--accent-color);
-    border-radius: 3rem;
-    /* box-shadow: 1px 1px 10px var(--other-color); */
+    /* border: 1px solid var(--other-color); */
+    border-radius: 2rem;
+    background-color: var(--bg-color);
+    box-shadow: 1px 1px 10px var(--other-color);
 }
 
-/* .education-content:hover {
-    scale: 1.02;
-} */
 
 .education-content h3 {
     font-size: 1rem;
@@ -202,7 +198,6 @@ body {
     color: var(--main-color);
 }
 .education-content p{
-    margin-top: 0.5rem;
     font-size: 1rem;
 }
 .education-content h1 {
@@ -211,7 +206,7 @@ body {
 }
 
 .education img {
-    width: 10vw;
+    width: 8vw;
 }
 
 .experience{
@@ -240,7 +235,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin: 4rem 0; */
     gap: 3rem;
 }
 
@@ -323,7 +317,8 @@ body {
     scroll-margin-top: 20px;
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    background-color: rgb(238, 238, 238);
+    /* background-color: rgb(238, 238, 238); */
+    background-image: url(images/gradient-bg-2.jpg);
 }
 
 .projects .heading {
@@ -346,16 +341,17 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 3px solid transparent;
+    border: 2px solid white;
     padding: 0.7rem;
     border-radius: 15px;
     box-shadow: 2px 2px 15px var(--other-color);
     transition: .3s ease-in;
-    background-color: var(--bg-color);
+    background-color: var(--bg-color-3);
+    backdrop-filter: blur(15px);
 }
 
 .slide-content:hover {
-    border: 3px solid var(--main-color);
+    border: 2px solid var(--main-color);
 }
 
 .slide-container .slide-content img {
@@ -442,6 +438,7 @@ body {
     scroll-snap-align: start;
     scroll-snap-stop: always;
     gap: 2rem;
+    background-color: var(--bg-color-3);
 }
 
 .about_me h1{
@@ -454,6 +451,27 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
+}
+
+.more-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5vw;
+    margin-bottom: 2rem;
+}
+
+.more-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about_me-img img {
+    min-width: 300px;
+    width: 36vw;
+    max-width: 450px;
+    border-radius: 3rem;
 }
 
 .software-grid {
@@ -551,7 +569,6 @@ input[type="checkbox"] {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 4rem;
     scroll-snap-align: start;
 }
 
@@ -670,6 +687,10 @@ input[type="checkbox"] {
     .education img {
         width: 14vw;
     }
+
+    .more-container {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 580px) {
@@ -686,9 +707,22 @@ input[type="checkbox"] {
 }
 
 @media (max-width: 500px) {
+    .home-content h1{
+        text-align: center;
+    }
     .education-content{
         flex-direction: column;
+        gap: 0.5rem;
     }
+    
+    .education-content h1{
+        font-size: 1.1rem;
+    }
+
+    .education-text {
+        align-self: self-start;
+    }
+
     .education .education-content {
         gap: 1rem;
         padding: 1.5rem 2rem;
