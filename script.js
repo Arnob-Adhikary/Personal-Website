@@ -100,8 +100,8 @@ ScrollReveal({
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
 
-ScrollReveal().reveal('.home .home-img img, .education-content, .experience-container, .slide-container, .research-container, .about_me-main', { origin: 'bottom' });
+ScrollReveal().reveal('.education-content, .experience-container, .slide-container, .research-container, .about_me-main', { origin: 'bottom' });
 
 ScrollReveal().reveal('.home-content h1', { origin: 'left' });
 
-ScrollReveal().reveal('.home-content p', { origin: 'right' });
+ScrollReveal().reveal('.home-content p, .home .home-img img', { origin: 'right' });
