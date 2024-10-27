@@ -91,24 +91,10 @@ menuIcon.onclick = () => {
 // });
 
 
-ScrollReveal({ 
-    // reset: true,
-    distance: '80px',
-    duration: 2000,
-    delay: 150 
-});
-
-ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-
-ScrollReveal().reveal('.education-content, .experience-container, .slide-container, .research-container, .about_me-main', { origin: 'bottom' });
-
-ScrollReveal().reveal('.home-content h1', { origin: 'left' });
-
-ScrollReveal().reveal('.home-content p, .home .home-img img', { origin: 'right' });
-
 window.addEventListener('scroll', function() {
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('nav a');
+    const header = document.querySelector('header');
 
     let currentSectionIndex = 0;
 
@@ -121,7 +107,29 @@ window.addEventListener('scroll', function() {
 
     navLinks.forEach(link => {
         link.classList.remove('active');
+        link.addEventListener('click', function() {
+            // Close the navbar on mobile devices
+            const navbar = document.querySelector('nav');
+            navbar.classList.remove('active');
+        });
     });
 
     navLinks[currentSectionIndex].classList.add('active');
+    
+    header.classList.toggle('sticky', window.scrollY > 80);
 });
+
+ScrollReveal({ 
+    // reset: true,
+    distance: '80px',
+    duration: 2000,
+    delay: 50
+});
+
+ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+
+ScrollReveal().reveal('.home .home-img img, .education-content, .experience-container, .slide-container, .research-container, .about_me-main', { origin: 'bottom' });
+
+ScrollReveal().reveal('.home-content h1', { origin: 'left' });
+
+ScrollReveal().reveal('.home-content p', { origin: 'right' });
