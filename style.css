@@ -706,6 +706,10 @@ input[type="checkbox"] {
 }
 
 @media (max-width: 500px) {
+    html {
+        scroll-snap-type: none;
+    }
+
     .home-content h1{
         text-align: center;
     }
