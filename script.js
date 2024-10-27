@@ -1,11 +1,17 @@
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
+let header = document.querySelector('header');
 
 // Toggle navbar and icon active state
 menuIcon.onclick = () => {
     navbar.classList.toggle('active');
     menuIcon.classList.toggle('active');
+    
+    if (!header.classList.contains('sticky')) {
+        header.classList.toggle('sticky')
+    }
 };
+
 
 
 window.addEventListener('scroll', function() {
@@ -36,7 +42,6 @@ window.addEventListener('scroll', function() {
     header.classList.toggle('sticky', window.scrollY > 80);
 });
 
-
 ScrollReveal({ 
     // reset: true,
     distance: '80px',
@@ -48,4 +53,4 @@ ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
 
 ScrollReveal().reveal('.home .home-img img, .education-content, .experience-container, .slide-container, .research-container, .about_me-main', { origin: 'bottom' });
 
-ScrollReveal().reveal('.home-content h1', { origin: 'left' });
+ScrollReveal().reveal('.home-content h1, .about_me-img img', { origin: 'left' });
