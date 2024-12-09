@@ -2,6 +2,7 @@
 :root {
     --bg-color: #FEFFFE;
     --bg-color-2: #E5FCF5;
+    --bg-color-3: #fbf5f3;
     --text-color: #210124;
     --main-color: #750D37;
     --accent-color: #96C4A5;
@@ -39,8 +40,7 @@ body {
     align-items: center;
     padding:0 9%;
     z-index: 100;
-    
-    background-color: transparent;
+    background-color: var(--bg-color);
     transition: .5s;
 }
 
@@ -71,15 +71,23 @@ body {
     position: relative;
 }
 .navbar a:hover, .navbar a.active {
-    color: var(--accent-color);
+    color: var(--main-color);
 }
 
 .navbar a.active::before {
     content: '';
     height: 3px;
     width: 100%;
-    background: var(--accent-color);
+    background: var(--main-color);
     position: absolute;
     left: 0;
     bottom: -8px;
+}
+
+.main-home {
+    top: 0;
+    left: 0;
+    padding: 9rem 9% 2rem;
+    min-height: 100vh;
+    background-color: var(--main-color);
 }

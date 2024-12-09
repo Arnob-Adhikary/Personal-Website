@@ -30,12 +30,10 @@ body {
 }
 /* top navigation bar */
 .topbar {
-    /* background-color: var(--bg-color-2); */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    /* height: 80px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -171,13 +169,11 @@ body {
     scroll-margin-top: 20px;
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    /* background-color: var(--bg-color-3); */
     background-color: rgb(238, 238, 238);
 }
 .education h1:first-child {
     text-align: center;
     font-size: 2rem;
-    /* margin-bottom: 2rem; */
 }
 
 .education .education-content {
@@ -185,7 +181,6 @@ body {
     gap: 4rem;
     padding: 1.5rem 4rem;
     align-items: center;
-    /* border: 1px solid var(--other-color); */
     border-radius: 2rem;
     background-color: var(--bg-color);
     box-shadow: 1px 1px 10px var(--other-color);
@@ -218,7 +213,6 @@ body {
     scroll-margin-top: 20px;
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    /* background-color: var(--bg-color-2); */
     min-height: 100vh;
 }
 
@@ -320,7 +314,6 @@ body {
     scroll-margin-top: 20px;
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    /* background-color: rgb(238, 238, 238); */
     background-image: url(images/gradient-bg-2.jpg);
 }
 
@@ -417,7 +410,6 @@ body {
     scroll-margin-top: 20px;
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    /* background-color: #fad4e3; */
 }
 
 .research h1 {
@@ -621,7 +613,7 @@ input[type="checkbox"] {
         display: flex;
         flex-direction: column;
         align-items: start;
-        gap: 1rem;
+        gap: 2rem;
     }
 
     .icon-container{
@@ -634,10 +626,18 @@ input[type="checkbox"] {
     .navbar {
         display: none;
         width: 100%;
+        opacity: 0;
+        transition-property: display opacity;
+        transition-duration: 0.3s;
+        transition-behavior: allow-discrete;
     }
 
     .navbar.active {
         display: block;
+        opacity: 1;
+        @starting-style {
+            opacity: 0;
+        }
     }
 
     .navbar a {

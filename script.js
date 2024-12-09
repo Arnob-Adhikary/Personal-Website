@@ -9,13 +9,14 @@ menuIcon.onclick = () => {
     
     if (!header.classList.contains('sticky')) {
         header.classList.toggle('sticky')
-    }
+    } 
     else {
         if (window.scrollY < 80) {
             header.classList.remove('sticky')
         }
     }
 };
+
 
 
 
