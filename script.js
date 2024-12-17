@@ -17,7 +17,16 @@ menuIcon.onclick = () => {
     }
 };
 
+let rightBtn = document.querySelector('#right-button')
+let leftBtn = document.querySelector('#left-button')
+let slideContainer = document.querySelector('.slide-container')
 
+rightBtn.onclick = () => {
+    slideContainer.scrollLeft += 500;
+}
+leftBtn.onclick = () => {
+    slideContainer.scrollLeft -= 500;
+}
 
 
 window.addEventListener('scroll', function() {

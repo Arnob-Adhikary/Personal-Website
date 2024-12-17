@@ -308,7 +308,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     min-height: 100vh;
     padding: 5rem 9% 2rem;
     scroll-margin-top: 20px;
@@ -328,6 +328,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 2rem;
     overflow-x: scroll;
+    scrollbar-width: none;
     padding: 2rem 1rem;
 }
 
@@ -398,6 +399,26 @@ body {
 .slide-content p{
     font-size: .8rem;
     margin-bottom: 1rem;
+}
+
+.slide-scroll {
+    display: inline-flex;
+    font-size: 2.2rem;
+    align-self: flex-end;
+    gap: 1rem;
+}
+
+.slide-scroll i{
+    border: solid var(--main-color);
+    border-radius: 50%;
+    color: var(--main-color);
+    transition: .5s;
+}
+
+.slide-scroll i:hover{
+    color: var(--bg-color);
+    background-color: var(--main-color);
+    scale: 1.1;
 }
 
 .research {
@@ -702,6 +723,10 @@ input[type="checkbox"] {
     }
     .slide-content {
         width: 280px;
+    }
+
+    .slide-scroll {
+        align-self: center;
     }
 }
 
