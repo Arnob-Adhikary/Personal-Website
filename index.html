@@ -4,311 +4,444 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arnob Adhikary</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Arnob Adhikary | BIM, Reality Capture & Digital Twins</title>
+    <meta name="description" content="Arnob Adhikary is a BIM Coordinator and prospective graduate researcher working on Scan-to-BIM, LiDAR, and AI-driven semantic enrichment of as-built BIM for facility management.">
+    <meta property="og:title" content="Arnob Adhikary | BIM, Reality Capture & Digital Twins">
+    <meta property="og:description" content="Prospective MS/PhD researcher in Scan-to-BIM, LiDAR, and AI for facility management.">
+    <meta property="og:image" content="images/work/sneek-revit.jpg">
+    <meta name="theme-color" content="#7A1235">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237A1235'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' font-weight='700' fill='white' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
-
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
     <header class="topbar">
-        <div class="icon-container">
-            <a href="#" class="logo"><span>A</span>rnob.</a>
-            <i class='bx bx-menu' id="menu-icon"></i>
+        <div class="container topbar-inner">
+            <a href="index.html" class="logo"><span>A</span>rnob Adhikary</a>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navbar">
+                <i class='bx bx-menu'></i>
+            </button>
+            <nav class="navbar" id="navbar">
+                <a href="#research">Research</a>
+                <a href="#experience">Experience</a>
+                <a href="projects.html">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+                <a href="downloads/Arnob_Adhikary_CV.pdf" class="nav-cta" target="_blank" rel="noopener"><i class='bx bx-download'></i> CV</a>
+            </nav>
         </div>
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#education">Education</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#research">Research</a>
-            <a href="#about_me">About Me</a>
-        </nav>
     </header>
 
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hello, I am</h3>
-            <h1>Arnob <span>Adhikary</span></h1>
-            <p>A Prospective graduate student with a background as a BIM Engineer at a Dutch-Bangladeshi firm. Eager to pursue higher studies, aiming to deepen expertise in construction technology and contribute to cutting-edge research and innovation.</p>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/arnob.adhikary.31?mibextid=ZbWKwL" target="_blank"><i class='bx bxl-facebook' ></i></a>
-                <a href="https://www.linkedin.com/in/arnob-adhikary-780625229/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
-                <a href="https://github.com/Arnob-Adhikary" target="_blank"><i class='bx bxl-github'></i></a>
-                <a href="mailto:arnob.work@gmail.com"><i class='bx bxl-gmail' ></i></a>
-                <a href="tel:+8801708653245"><i class='bx bxs-phone' ></i></a>
+    <main id="main">
+        <!-- HERO -->
+        <section class="hero" id="home">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <p class="status-pill"><span class="dot"></span> Seeking funded MS / PhD research positions</p>
+                    <h1>Arnob Adhikary</h1>
+                    <p class="hero-lede">I turn reality-capture data into intelligent building models, and I want to make that process automatic.</p>
+                    <p class="hero-body">
+                        I'm a BIM Coordinator at HawarIT (Netherlands / Bangladesh), where I built the company's
+                        Scan-to-BIM workflow from the ground up. My independent research recognises fire-safety
+                        assets in laser scans and matches them to inspection records to enrich as-built BIM models.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="downloads/Arnob_Adhikary_CV.pdf" class="btn btn-primary" target="_blank" rel="noopener"><i class='bx bx-file'></i> Download CV</a>
+                        <a href="projects.html" class="btn btn-ghost">View projects <i class='bx bx-right-arrow-alt'></i></a>
+                        <div class="social">
+                            <a href="mailto:adhi.arnob@gmail.com" aria-label="Email"><i class='bx bx-envelope'></i></a>
+                            <a href="https://www.linkedin.com/in/arnob-adhikary-780625229/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                            <a href="https://github.com/Arnob-Adhikary" target="_blank" rel="noopener" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                        </div>
+                    </div>
+                    <ul class="facts">
+                        <li><strong>170+</strong> projects delivered</li>
+                        <li><strong>20+</strong> specialists led</li>
+                        <li><strong>€280k+</strong> a year won through proposals</li>
+                    </ul>
+                </div>
+                <figure class="hero-portrait">
+                    <img src="images/work/portrait.jpg" alt="Portrait of Arnob Adhikary">
+                </figure>
             </div>
-            <a href="downloads/Arnob Adhikary_HIT_CV.pdf"><button class="download">Download CV</button></a>
-        </div>
-        <div class="home-img">
-            <img src="images/home_img.jpg" alt="">
-        </div>
-    </section>
+        </section>
 
-    <section class="education" id="education">
-        <h1 class="heading">Education</h1>
-        <div class="education-content">
-            <div>
-                <img src="images/Logo_KUET.svg" alt="">
-            </div>
-            <div class="education-text">
-                <p>2018-2023</p>
-                <h3>B.Sc. in Building Engineering and Construction Management</h3>
-                <h1>Khulna University of Engineering & Technology</h1>
-                <h3>CGPA: 3.28</h3>
-                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aliquam atque culpa nihil explicabo totam praesentium, in architecto cupiditate adipisci.</p> -->
-            </div>
-        </div>
-        <div class="education-content">
-            <div>
-                <img src="images/Logo_St_Joseph.svg" alt="">
-            </div>
-            <div class="education-text">
-                <p>2015-2017</p>
-                <h3>HSC in Science</h3>
-                <h1>Saint Joseph Higher Secondary School</h1>
-                <h3>GPA: 5.00</h3>
-                <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas ullam animi molestiae quia dolorum voluptatibus nesciunt iste eveniet architecto nisi.</p> -->
-            </div>
-        </div>
-        <div class="education-content">
-            <div>
-                <img src="images/Logo_dhaka-board.svg" alt="">
-            </div>
-            <div class="education-text">
-                <p>2013-2015</p>
-                <h3>SSC in Science</h3>
-                <h1>Ghatakchar High School</h1>
-                <h3>GPA: 5.00</h3>
-                <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas ullam animi molestiae quia dolorum voluptatibus nesciunt iste eveniet architecto nisi.</p> -->
-            </div>
-        </div>
-    </section>
-
-    <section class="experience" id="experience">
-        <h1 class="heading">Professional <span>Experience</span></h1>
-        <div class="experience-container">
-            <div class="experience-content">
+        <!-- RESEARCH INTERESTS -->
+        <section class="section section-tint" id="interests">
+            <div class="container interests-grid">
                 <div>
-                    <img src="images/logo_HIT-T.png" alt="">
+                    <p class="eyebrow">Research interests</p>
+                    <h2>From point clouds to building intelligence</h2>
+                    <p class="muted">
+                        Nearly three years in industry taught me where the industry loses time: turning raw scans into
+                        reliable, information-rich models still depends on expert manual work. In graduate school I want to
+                        study how computer vision, automation and digital twins can close that gap and make as-built data
+                        useful across a building's lifecycle.
+                    </p>
                 </div>
-                <p>Dec' 23 - Current</p>
-                <h3>BIM Engineer</h3>
-                <h1>HawarIT Limited</h1>
-                <p>Led a BIM team, established BIM standards, and implemented innovative problem-solving methods to enhance project efficiency and team collaboration</p>
-                <a href="pages/hawarit.html"><button>Read More</button></a>
+                <ul class="chips">
+                    <li>Building Information Modeling (BIM)</li>
+                    <li>LiDAR &amp; Photogrammetry</li>
+                    <li>Digital Twins</li>
+                    <li>Scan-to-BIM Automation</li>
+                    <li>Facility Management</li>
+                    <li>AR / VR in Construction</li>
+                    <li>Construction Safety</li>
+                    <li>Construction Automation</li>
+                </ul>
             </div>
-            <div class="experience-content">
-                <div>
-                    <img src="images/logo_ideaMods-T.png" alt="">
-                </div>
-                <p>Nov' 20 - Jan' 22</p>
-                <h3>Sales & Marketing Associate</h3>
-                <h1>ideaMods</h1>
-                <p>Served as Sales & Marketing Associate, driving sales growth. Developed a order & inventory management system to streamline operations.</p>
-                <a href="pages/hawarit.html"><button>Read More</button></a>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="projects" id="projects">
-        <h1 class="heading">Projects</h1>
-        <div class="slide-container">
-            <div class="slide-content">
-                <img src="images/prj3.jpg" alt="">
-                <p class="tag-1">Professional</p>
-                <h3>Klooster Scan2BIM</h3>
-                <p>A scan to BIM project of AZC Sweikhuizen, a refugee camp in The Netherlands</p>
-                <a href="#"><i class='bx bx-right-arrow-alt'></i></a>
-            </div>
-            <div class="slide-content">
-                <img src="images/prj4.png" alt="">
-                <p class="tag-1">Professional</p>
-                <h3>CAD Data Maintenance</h3>
-                <p>CAD data maintenance project of European Commission Joint Research Center, The Netherlands</p>
-                <a href="#"><i class='bx bx-right-arrow-alt'></i></a>
-            </div>
-            <div class="slide-content">
-                <img src="images/prj5.png" alt="">
-                <p class="tag-1">Professional</p>
-                <h3>CAD2BIM Initiative</h3>
-                <p>CAD to BIM pilot project of European Commission JRC, The Netherlands</p>
-                <a href="#"><i class='bx bx-right-arrow-alt'></i></a>
-            </div>
-            <div class="slide-content">
-                <img src="images/prj6.jpg" alt="">
-                <p class="tag-1">Professional</p>
-                <h3>Photogrammetry</h3>
-                <p>DSM, Orthomosaic and Point-cloud generation from Drone survey</p>
-                <a href="#"><i class='bx bx-right-arrow-alt'></i></a>
-            </div>
-            <div class="slide-content">
-                <img src="images/prj7.png" alt="">
-                <p class="tag-1">Professional</p>
-                <h3>NLCS DTM</h3>
-                <p>3D Planimetrics digitization project according to Netherlands Civil Standards (NLCS)</p>
-                <a href="#"><i class='bx bx-right-arrow-alt'></i></a>
-            </div>
-            <div class="slide-content">
-                <img src="images/prj1-1.jpg" alt="">
-                <p class="tag-2">Academic</p>
-                <h3>Breaking the Rigidity</h3>
-                <p>An academic interior design project of Janata Bank, KUET</p>
-                <a href="#"><i class='bx bx-right-arrow-alt'></i></a>
-            </div>
-            <div class="slide-content">
-                <img src="images/prj2-1.jpg" alt="">
-                <p class="tag-1">Professional</p>
-                <h3>Banorgati Apartment</h3>
-                <p>Architectural design of a five storied residential building</p>
-                <a href="#"><i class='bx bx-right-arrow-alt'></i></a>
-            </div>
-        </div>
-        <div class="slide-scroll">
-            <i class='bx bx-chevron-left' id="left-button"></i>
-            <i class='bx bx-chevron-right' id="right-button"></i>
-        </div>
-    </section>
-    
-    <section class="research" id="research">
-        <h1 class="heading">Research</h1>
-        <div class="research-container">
-            <h2>This section is under development... Come back soon to see the progress...!</h2>
-        </div>
-    </section>
-    
-    <section class="about_me" id="about_me">
-        <div class="about_me-main">
-            <div class="more-container">
-                <div class="about_me-img">
-                    <img src="images/about-me_img.jpg" alt="">
+        <!-- RESEARCH -->
+        <section class="section" id="research">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Research experience</p>
+                    <h2>Research</h2>
                 </div>
-                <div class="more-content">
-                    <h1 class="heading">About Me</h1>
-                    <p>A prospective graduate student with hands-on experience as a BIM Engineer at a Dutch-Bangladeshi firm, I am passionate about advancing my knowledge in construction technology and digital building solutions. Driven to pursue higher studies, I aim to specialize further in BIM and construction management, contributing to impactful research and innovative practices that address industry challenges and elevate sustainable design and project efficiency worldwide.</p>
-                </div>
-            </div>
-            <h2 class="first-h2">Software Skill</h2>
-            <div class="software-grid">
-                <div class="software-flex">
-                    <div class="software-container">
-                        <input type="checkbox" name="accordion" id="seventh">
-                        <label for="seventh">Building Information Modelling<span><i class='bx bx-chevron-down'></i></span></label>
-                        <div class="software-content">
-                            <li>Autodesk Revit</li>
-                            <li>Navisworks</li>
-                            <li>BlenderBIM</li>
-                            <li>Dynamo</li>
-                            <li>Stabicad</li>
+
+                <article class="rs-feature reveal">
+                    <div class="rs-text">
+                        <div class="research-meta">
+                            <span class="badge badge-live">In progress</span>
+                            <span>Independent research · with two colleagues from BECM, KUET</span>
                         </div>
+                        <h3>Multimodal Semantic Enrichment of As-Built BIM Through Attribute-Aware Asset Recognition and Inspection-Schedule Matching</h3>
+                        <p>
+                            Facility managers need as-built BIM models that show where fire-safety assets are, what they are,
+                            and whether they agree with the inspection records. My research adds fire-safety assets to existing
+                            as-built BIM by combining two sources of evidence: <strong>laser-scan panoramas</strong> and
+                            <strong>inspection schedules</strong>.
+                        </p>
+                        <ul class="ticks">
+                            <li><strong>Attribute-aware recognition.</strong> Identifies not only the asset type but also the attributes inspectors care about, such as extinguisher agent type and exit-sign direction.</li>
+                            <li><strong>From images to 3D.</strong> Detections in 360&deg; panoramas are mapped onto the registered point cloud and combined across scan stations to locate each asset reliably.</li>
+                            <li><strong>Matching to records.</strong> Assets are matched to inspection-schedule entries by type, attribute and space, then written into the IFC model with their source data. Anything unmatched becomes an audit list.</li>
+                        </ul>
+                        <ul class="tags">
+                            <li>Python</li><li>Computer vision</li><li>Instance segmentation</li><li>Point clouds</li><li>LLM document extraction</li><li>Graph matching</li><li>IFC / BIM</li>
+                        </ul>
                     </div>
-                    <div class="software-container">
-                        <input type="checkbox" name="accordion" id="first">
-                        <label for="first">Computer Aided Drafting<span><i class='bx bx-chevron-down'></i></span></label>
-                        <div class="software-content">
-                            <li>Autocad</li>
-                            <li>Microstation</li>
+                    <figure class="rs-figure">
+                        <div class="flow-lanes">
+                            <div class="lane">
+                                <p class="flow-label">Laser scans</p>
+                                <ol>
+                                    <li><i class='bx bx-target-lock'></i><div><strong>Attribute-aware recognition</strong><span>Assets and their attributes in 360&deg; panoramas</span></div></li>
+                                    <li><i class='bx bx-cube-alt'></i><div><strong>3D semantic mapping</strong><span>Fused across scan stations</span></div></li>
+                                </ol>
+                            </div>
+                            <div class="lane">
+                                <p class="flow-label">Inspection schedules</p>
+                                <ol>
+                                    <li><i class='bx bx-file'></i><div><strong>Schedule extraction</strong><span>Documents to structured records</span></div></li>
+                                </ol>
+                            </div>
                         </div>
+                        <div class="flow-merge" aria-hidden="true"></div>
+                        <ol class="flow-out">
+                            <li><i class='bx bx-git-compare'></i><div><strong>Asset&ndash;record matching</strong><span>By type, attribute and space</span></div></li>
+                            <li class="flow-final"><i class='bx bx-buildings'></i><div><strong>Enriched as-built BIM</strong><span>IFC assets with provenance, plus an audit list</span></div></li>
+                        </ol>
+                        <figcaption><strong>Fig. 1</strong> Simplified research overview</figcaption>
+                    </figure>
+                </article>
+
+                <article class="rs-entry reveal">
+                    <div class="rs-side">
+                        <span class="badge">Undergraduate thesis</span>
+                        <p>B.Sc., KUET</p>
+                        <p>Supervisor:<br> <strong>Md Shahriar Hossain</strong></p>
                     </div>
-                    <div class="software-container">
-                        <input type="checkbox" name="accordion" id="second">
-                        <label for="second">Structural Analysis<span><i class='bx bx-chevron-down'></i></span></label>
-                        <div class="software-content">
-                            <li>Autodesk Robot</li>
-                            <li>Etabs</li>
-                        </div>
+                    <div class="rs-body">
+                        <h3>Evaluation of Thermal Performance of a Wall-Integrated Evaporative Cooling System with Natural Ventilation in a Warm-Humid Climate</h3>
+                        <p>
+                            Evaluated how well a wall-integrated evaporative cooling system works in a humid climate. I simulated
+                            airflow and heat transfer in ANSYS Fluent (CFD) under a range of humidity and velocity conditions,
+                            then designed, built and tested physical micro-models to validate the simulations. The results
+                            showed a clear inverse relationship between cooling efficiency and ambient relative humidity.
+                        </p>
+                        <ul class="tags">
+                            <li>ANSYS Fluent</li><li>CFD</li><li>Experimental validation</li><li>Building physics</li>
+                        </ul>
                     </div>
-                    <div class="software-container">
-                        <input type="checkbox" name="accordion" id="third">
-                        <label for="third">Management<span><i class='bx bx-chevron-down'></i></span></label>
-                        <div class="software-content">
-                            <li>Primavera P6</li>
-                            <li>Microsoft Project</li>
-                        </div>
-                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- STRENGTHS -->
+        <section class="band" id="strengths">
+            <div class="container">
+                <p class="eyebrow">Why me</p>
+                <h2>What I bring to a research group</h2>
+                <ol class="band-grid">
+                    <li class="reveal">
+                        <span class="band-num">01</span>
+                        <h3>Automation &amp; code</h3>
+                        <p>Python, IfcOpenShell, Dynamo and FME scripts that replaced hours of manual modelling and QA in production.</p>
+                    </li>
+                    <li class="reveal">
+                        <span class="band-num">02</span>
+                        <h3>Reality-capture data</h3>
+                        <p>Hands-on with static and mobile LiDAR, UAV photogrammetry, GNSS/total-station survey, and survey-grade QA.</p>
+                    </li>
+                    <li class="reveal">
+                        <span class="band-num">03</span>
+                        <h3>Leading teams</h3>
+                        <p>Led multidisciplinary teams of up to 20+ specialists from proposal to delivery for EU clients.</p>
+                    </li>
+                    <li class="reveal">
+                        <span class="band-num">04</span>
+                        <h3>Proposal writing</h3>
+                        <p>Wrote technical proposals and tenders that secured over €280,000 in projects each year.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section class="section section-tint" id="experience">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Professional experience</p>
+                    <h2>Experience</h2>
                 </div>
-                <div class="software-flex">
-                    <div class="software-container">
-                        <input type="checkbox" name="accordion" id="fifth">
-                        <label for="fifth">LiDAR & Photogrammetry<span><i class='bx bx-chevron-down'></i></span></label>
-                        <div class="software-content">
-                            <li>Terrasolid</li>
-                            <li>Agisoft Metashape</li>
-                            <li>Pix4D Mapper</li>
-                            <li>Meshroom</li>
+
+                <ol class="xp">
+                    <li class="xp-item reveal">
+                        <div class="xp-when">
+                            <span class="job-date">Dec 2023 – Present</span>
+                            <img src="images/logo_HIT-T.png" alt="HawarIT logo" class="xp-logo">
                         </div>
+                        <div class="xp-body">
+                            <h3>BIM Coordinator</h3>
+                            <p class="job-org">HawarIT Limited · Netherlands / Bangladesh · Full time</p>
+                            <p class="xp-summary">
+                                Lead Scan-to-BIM and Digital Terrain Modelling delivery: 170+ projects with a multidisciplinary
+                                team of 20+ specialists, from client communication and proposals to final delivery.
+                            </p>
+                            <div class="xp-groups">
+                                <div>
+                                    <h4>Scan-to-BIM &amp; automation</h4>
+                                    <ul class="ticks">
+                                        <li>Standardized the company's Scan-to-BIM workflow, turning static LiDAR data into multidisciplinary LOD 300–400 Revit models for 100+ industrial and infrastructure clients.</li>
+                                        <li>Started workflow automation with custom Dynamo, IfcOpenShell (Python) and FME scripts that cut manual processing and modelling hours.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4>Geospatial mapping</h4>
+                                    <ul class="ticks">
+                                        <li>Processed Mobile Laser Scanning data for Amsterdam municipalities into DTM and planimetric maps at &lt;2 cm RMSE, using GCP-based matching and point-cloud classification.</li>
+                                        <li>Designed a UAV photogrammetry pipeline in Agisoft Metashape, producing georeferenced orthomosaics at 2 cm GSD for a land ministry project in Bangladesh.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4>Data management</h4>
+                                    <ul class="ticks">
+                                        <li>Directed drawing digitization and data management for the EU Joint Research Centre (JRC), Stichting Yuverta and Gemeente Utrecht.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4>Proposals &amp; clients</h4>
+                                    <ul class="ticks">
+                                        <li>Secured projects worth over €280,000 a year by writing technical proposals and managing key client relationships.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="projects.html" class="text-link">See selected projects <i class='bx bx-right-arrow-alt'></i></a>
+                        </div>
+                    </li>
+
+                    <li class="xp-item reveal">
+                        <div class="xp-when">
+                            <span class="job-date">Mar 2020 – Dec 2020</span>
+                            <img src="images/logo_ideaMods-T.png" alt="ideaMods logo" class="xp-logo">
+                        </div>
+                        <div class="xp-body">
+                            <h3>Online Operation &amp; Marketing Coordinator</h3>
+                            <p class="job-org">ideaMods · Dhaka, Bangladesh · Part time</p>
+                            <ul class="ticks xp-list">
+                                <li>Built and deployed an automated order and inventory management system with Google Sheets and Google Apps Script.</li>
+                                <li>Ran all client-facing social channels, handled custom furniture orders and ran digital campaigns during the COVID-19 pandemic.</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- PROJECT AREAS -->
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="section-head section-head-row">
+                    <div>
+                        <p class="eyebrow">Selected work</p>
+                        <h2>Three areas of practice</h2>
                     </div>
-                    <div class="software-container">
-                        <input type="checkbox" name="accordion" id="sixth">
-                        <label for="sixth">3D modelling & Rendering<span><i class='bx bx-chevron-down'></i></span></label>
-                        <div class="software-content">
-                            <li>Sketchup</li>
-                            <li>Lumion</li>
-                            <li>Vray</li>
-                            <li>Photoshop</li>
+                    <a href="projects.html" class="btn btn-ghost">All project details <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+
+                <div class="area-grid">
+                    <a class="area-card reveal" href="projects.html#scan-to-bim">
+                        <div class="area-img"><img src="images/work/sneek-revit.jpg" alt="Revit model of the Krusrak bridge in Sneek" loading="lazy"></div>
+                        <div class="area-body">
+                            <span class="area-num">01</span>
+                            <h3>Scan to BIM</h3>
+                            <p>LiDAR point clouds converted into standardized LOD 300–400 BIM models for industrial and infrastructure projects across the Netherlands and the EU.</p>
+                            <ul class="mini-stats"><li><strong>150+</strong> projects</li><li><strong>10+</strong> specialists led</li></ul>
+                            <span class="text-link">Read case studies <i class='bx bx-right-arrow-alt'></i></span>
                         </div>
+                    </a>
+                    <a class="area-card reveal" href="projects.html#mls-dtm">
+                        <div class="area-img"><img src="images/work/mls-dtm-planimetric.jpg" alt="DTM planimetric drawing over mobile LiDAR point cloud" loading="lazy"></div>
+                        <div class="area-body">
+                            <span class="area-num">02</span>
+                            <h3>MLS Processing &amp; DTM Planimetrics</h3>
+                            <p>Mobile LiDAR data processed into NLCS-compliant DTM planimetric drawings for the Amsterdam Municipality.</p>
+                            <ul class="mini-stats"><li><strong>50+</strong> projects</li><li><strong>500,000+ m²</strong> mapped</li></ul>
+                            <span class="text-link">Read case study <i class='bx bx-right-arrow-alt'></i></span>
+                        </div>
+                    </a>
+                    <a class="area-card reveal" href="projects.html#documents">
+                        <div class="area-img"><img src="images/work/yuverta-drawing.jpg" alt="Revised technical floor plan drawing" loading="lazy"></div>
+                        <div class="area-body">
+                            <span class="area-num">03</span>
+                            <h3>Technical Document Management</h3>
+                            <p>As-built conditions turned into revised technical drawings and documents that facility managers can rely on.</p>
+                            <ul class="mini-stats"><li><strong>50,000+</strong> documents</li><li><strong>3</strong> major clients</li></ul>
+                            <span class="text-link">Read case studies <i class='bx bx-right-arrow-alt'></i></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section class="section section-tint" id="education">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Education &amp; training</p>
+                    <h2>Education</h2>
+                </div>
+                <div class="edu-grid">
+                    <article class="edu-card reveal">
+                        <img src="images/Logo_KUET.svg" alt="KUET logo" class="edu-logo">
+                        <div>
+                            <span class="job-date">Feb 2018 – Aug 2023</span>
+                            <h3>B.Sc. in Building Engineering and Construction Management (BECM)</h3>
+                            <p class="job-org">Khulna University of Engineering &amp; Technology (KUET), Khulna, Bangladesh</p>
+                            <dl class="edu-facts">
+                                <div><dt>CGPA</dt><dd>3.28 / 4.00</dd></div>
+                                <div><dt>Last 60 credits</dt><dd>3.65 / 4.00</dd></div>
+                                <div><dt>Major</dt><dd>Architectural Engineering</dd></div>
+                            </dl>
+                        </div>
+                    </article>
+                    <article class="edu-card edu-card-sm reveal">
+                        <i class='bx bx-certification edu-icon'></i>
+                        <div>
+                            <span class="job-date">Jul 2026</span>
+                            <h3>Geospatial Survey Training</h3>
+                            <p class="muted">Four-day hands-on training in UAV, RTK GNSS, total station and GPS survey, including data processing.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="section" id="skills">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Toolkit</p>
+                    <h2>Technical skills</h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-group reveal">
+                        <h3><i class='bx bx-code-curly'></i> Programming &amp; scripting</h3>
+                        <ul class="tags"><li>Python</li><li>IfcOpenShell</li><li>Dynamo</li><li>FME</li><li>AutoLISP</li><li>JavaScript</li><li>HTML &amp; CSS</li></ul>
                     </div>
-                    <div class="software-container">
-                        <input type="checkbox" name="accordion" id="eighth">
-                        <label for="eighth">Programming<span><i class='bx bx-chevron-down'></i></span></label>
-                        <div class="software-content">
-                            <li>Python</li>
-                            <li>HTML & CSS</li>
-                            <li>Javascript (Basic)</li>
-                        </div>
+                    <div class="skill-group reveal">
+                        <h3><i class='bx bx-radar'></i> Photogrammetry &amp; LiDAR</h3>
+                        <ul class="tags"><li>Terrasolid Suite</li><li>Agisoft Metashape</li><li>Trimble Inpho</li><li>Open3D</li><li>YOLO</li></ul>
                     </div>
-                    <div class="software-container">
-                        <input type="checkbox" name="accordion" id="fourth">
-                        <label for="fourth">Office Productivity<span><i class='bx bx-chevron-down'></i></span></label>
-                        <div class="software-content">
-                            <li>Word</li>
-                            <li>Excel</li>
-                            <li>Powerpoint</li>
-                        </div>
+                    <div class="skill-group reveal">
+                        <h3><i class='bx bx-buildings'></i> BIM &amp; CAD</h3>
+                        <ul class="tags"><li>Revit</li><li>BlenderBIM</li><li>Navisworks</li><li>Stabicad</li><li>AutoCAD</li><li>MicroStation</li></ul>
+                    </div>
+                    <div class="skill-group reveal">
+                        <h3><i class='bx bx-analyse'></i> Analysis &amp; simulation</h3>
+                        <ul class="tags"><li>ANSYS Fluent</li><li>ETABS</li><li>Autodesk Robot</li></ul>
+                    </div>
+                    <div class="skill-group reveal">
+                        <h3><i class='bx bx-book-content'></i> Documentation</h3>
+                        <ul class="tags"><li>LaTeX</li><li>MS Office</li><li>Adobe InDesign</li></ul>
                     </div>
                 </div>
             </div>
-            <h2 class="second-h2">Acolades</h2>
-            <div class="accolades-container">
-                <div class="accolades-content">
-                    <p>2019</p>
-                    <h3>1st Runner Up in "Visual Rendition"</h3>
-                    <p>Obtained 1st Runner Up in Visual Rendition event in a national fest "Builtech Fest 4.0" organized by Dept of BECM, KUET.</p>
+        </section>
+
+        <!-- HONORS & LEADERSHIP -->
+        <section class="section section-tint" id="honors">
+            <div class="container two-col">
+                <div>
+                    <p class="eyebrow">Recognition</p>
+                    <h2>Honors &amp; awards</h2>
+                    <ul class="list-dated">
+                        <li><span>2020</span><p><strong>1st Runner-Up, CAD Contest</strong>, BUILTECH FEST 4.0, KUET</p></li>
+                        <li><span>2020</span><p><strong>1st Runner-Up, Visual Rendition</strong>, BUILTECH FEST 4.0, KUET</p></li>
+                        <li><span>2019</span><p><strong>Technical Scholarship</strong>: awarded in first undergraduate year for ranking in the top half of the merit list</p></li>
+                        <li><span>2015</span><p><strong>Bangladesh Government Scholarship</strong> for outstanding performance in the SSC exam</p></li>
+                    </ul>
                 </div>
-                <div class="accolades-content">
-                    <p>2019</p>
-                    <h3>1st Runner Up in "CAD Contest"</h3>
-                    <p>Obtained 1st Runner Up in CAD Contest event in a national fest "Builtech Fest 4.0" organized by Dept of BECM, KUET.</p>
-                </div>
-                <div class="accolades-content">
-                    <p>2018</p>
-                    <h3>Technical Scholarship</h3>
-                    <p>Received one year scholarship for academic excellence in first year of bachelor</p>
-                </div>
-                <div class="accolades-content">
-                    <p>2015-2016</p>
-                    <h3>Government Scholarship</h3>
-                    <p>Received Two years Government Scholarship for obtaining the highest grade (5.00/5.00) in Secondary School Certificate Exam</p>
-                </div>
-                <div class="accolades-content">
-                    <p>2010-2011</p>
-                    <h3>Government Scholarship</h3>
-                    <p>Received Two years Government Scholarship for obtaining excellent result Primary School Certificate Exam</p>
+                <div>
+                    <p class="eyebrow">Service</p>
+                    <h2>Leadership &amp; teaching</h2>
+                    <ul class="list-dated">
+                        <li><span>2020 – 2021</span><p><strong>Treasurer, BECM Technical Club (BTECK), KUET</strong>. Led Revit, AutoCAD and SketchUp workshops for 50+ students and managed all club finances and event budgets.</p></li>
+                        <li><span>2019 – 2023</span><p><strong>Private Tutor</strong>. Mentored 20+ Grade 12 students in Mathematics and Physics.</p></li>
+                        <li><span>2022 – 2023</span><p><strong>Independent project</strong>. Designed the complete architecture of a five-storey residential building, from 3D models and renders to full working drawings.</p></li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section contact" id="contact">
+            <div class="container contact-inner reveal">
+                <p class="eyebrow">Get in touch</p>
+                <h2>Looking for a motivated graduate researcher?</h2>
+                <p class="muted">
+                    I'm applying for funded MS and PhD positions in BIM, reality capture, digital twins and construction
+                    automation. If your group has an opening or a project where my background fits, I'd be glad to hear
+                    from you. References are available on request.
+                </p>
+                <div class="hero-actions center">
+                    <a href="mailto:adhi.arnob@gmail.com" class="btn btn-primary"><i class='bx bx-envelope'></i> adhi.arnob@gmail.com</a>
+                    <a href="downloads/Arnob_Adhikary_CV.pdf" class="btn btn-ghost" target="_blank" rel="noopener"><i class='bx bx-file'></i> Curriculum Vitae</a>
+                </div>
+                <div class="social center">
+                    <a href="https://www.linkedin.com/in/arnob-adhikary-780625229/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/Arnob-Adhikary" target="_blank" rel="noopener" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2024 by Arnob Adhikary | All Rights Reserved</p>
-        </div>
-        <div class="footer-icon">
-            <a href="#home"><i class='bx bx-chevrons-up'></i></a>
+        <div class="container footer-inner">
+            <p>&copy; <span id="year">2026</span> Arnob Adhikary</p>
+            <a href="#home" class="to-top" aria-label="Back to top"><i class='bx bx-up-arrow-alt'></i></a>
         </div>
     </footer>
-    
-    <script src="https://unpkg.com/scrollreveal"></script>
+
     <script src="script.js"></script>
 </body>
 
