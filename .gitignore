@@ -1,0 +1,5 @@
+# Original full-size project images (the site uses compressed copies in images/work/)
+images/projects/
+
+# Local preview server config
+.claude/
