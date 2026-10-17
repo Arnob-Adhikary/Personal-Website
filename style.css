@@ -223,7 +223,12 @@ strong { font-weight: 600; }
     padding: 10px 16px; border-radius: 999px;
     background: var(--surface); border: 1px solid var(--line);
 }
-.chips li:nth-child(-n+4) { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+.chips-accent li { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+.interest-groups { display: grid; gap: 28px; }
+.interest-label {
+    font-size: .76rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+    color: var(--muted); margin-bottom: 12px;
+}
 
 /* ---------- Research ---------- */
 .research-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; font-size: .88rem; color: var(--muted); }
